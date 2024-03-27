@@ -18,4 +18,8 @@ public class Livro {
     public String getTitulo() {
         return titulo;
     }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
 }
