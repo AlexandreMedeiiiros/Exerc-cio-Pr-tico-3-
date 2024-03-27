@@ -2,8 +2,10 @@ package test;
 
 import Biblioteca.Biblioteca;
 import junit.framework.TestCase;
+import org.junit.Test;
 
-class Us2Test  extends TestCase {
+public class Us2Test  extends TestCase {
+    @Test
     public void listaLivrosDisponiveis(){
         Biblioteca biblioteca = new Biblioteca();
         biblioteca.criarLivro("livro1");

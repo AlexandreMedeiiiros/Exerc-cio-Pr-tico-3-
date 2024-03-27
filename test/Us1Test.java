@@ -3,8 +3,7 @@ import Biblioteca.Biblioteca;
 import Biblioteca.Livro;
 import junit.framework.*;
 
-class Us1Test extends TestCase {
-
+public class Us1Test extends TestCase {
 
     public void testeGetLivrosByTitulo(){
         Biblioteca biblioteca = new Biblioteca();
