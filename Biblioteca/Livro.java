@@ -6,13 +6,20 @@ public class Livro {
     private String titulo;
     private boolean disponivel;
 
-    public Livro(String titulo){
+    private int id;
+
+    public Livro(String titulo, int id){
         this.disponivel = true;
         this.titulo = titulo;
+        this.id = id;
     }
 
     public boolean verificaLivro(String titulo){
         return Objects.equals(this.titulo, titulo);
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 
     public String getTitulo() {
@@ -21,5 +28,9 @@ public class Livro {
 
     public boolean isDisponivel() {
         return disponivel;
+    }
+
+    public int getId() {
+        return id;
     }
 }
